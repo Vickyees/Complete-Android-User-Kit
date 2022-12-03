@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UrlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/image"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:padding="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="      Enter URL :"
+        android:padding="20dp"
+        android:textColor="@color/bg"
+        android:background="@drawable/edittext"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <Button
+        android:id="@+id/btndone"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="done"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:onClick="done"
+        android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</ScrollView>

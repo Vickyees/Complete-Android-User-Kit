@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/new_notes_del_btn"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:orderInCategory="100"
+        android:title="Edit"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/new_notes_speak_btn"
+        android:title="Speak"
+        android:icon="@drawable/ic_speaker_white_24dp"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/new_notes_mic_btn"
+        android:title="Speak"
+        android:icon="@drawable/ic_mic_24dp"
+        app:showAsAction="always"
+        />
+</menu>

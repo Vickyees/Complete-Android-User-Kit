@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UZTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/uzcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/uzcolorPrimaryDark</item>
+        <item name="colorAccent">@color/uzcolorAccent</item>
+        <item name="titleTextColor">@color/uzbg</item>
+        <item name="actionMenuTextColor">@color/uzbg</item>
+        <item name="android:icon">@color/uzbg</item>
+        <item name="subtitleTextColor">@color/uzbg</item>
+        <item name="android:statusBarColor">@color/uzw</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

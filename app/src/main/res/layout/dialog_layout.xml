@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/whitebg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/uzgg"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/ynicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/uzgg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="13dp"
+        android:gravity="center_horizontal"
+        android:text="Are You Sure ?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="yes"
+            android:textColor="@color/uzw"
+            android:background="@drawable/uzbutton"/>
+
+
+        <Button
+            android:id="@+id/no"
+            android:text="No"
+            android:textColor="@color/uzw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/uzbutton"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

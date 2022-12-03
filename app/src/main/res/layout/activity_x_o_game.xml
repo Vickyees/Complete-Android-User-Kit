@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/xo_b"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".XOGameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:id="@+id/scoreboard"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 1"
+                    android:id="@+id/p1"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/ps1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score : 0"
+                    android:textSize="19sp"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bonus"
+                    android:textColor="#FFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="19sp"
+                    android:id="@+id/bonus"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player 2"
+                    android:textColor="#FFF"
+                    android:id="@+id/p2"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/ps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score : 0"
+                    android:textSize="19sp"
+                    android:textAlignment="textStart"
+                    android:textColor="#FFF" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/targetLay"
+            android:layout_below="@+id/scoreboard"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target  : "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:id="@+id/target"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/targetLay"
+            android:text="its Your Turn"
+            android:id="@+id/turn"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:id="@+id/field"
+            android:orientation="vertical"
+            android:layout_below="@+id/turn"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/a1"
+                        android:onClick="a1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/a2"
+                        android:onClick="a2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/a3"
+                        android:onClick="a3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:id="@+id/a4"
+                        android:onClick="a4"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:background="@drawable/xo_b"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/a5"
+                        android:onClick="a5"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:id="@+id/a6"
+                        android:onClick="a6"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:id="@+id/a7"
+                        android:textAllCaps="true"
+                        android:onClick="a7"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:background="@drawable/xo_b"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:id="@+id/a8"
+                        android:gravity="center"
+                        android:onClick="a8"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text=""
+                        android:id="@+id/a9"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:onClick="a9"
+                        android:background="@drawable/xo_b"
+                        android:textAlignment="center"
+                        android:textSize="60sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#FFF"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

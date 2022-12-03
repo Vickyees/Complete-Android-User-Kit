@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="wrap_content"
+android:background="@drawable/xo_b"
+android:gravity="center"
+android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Congrats !"
+    android:layout_marginTop="15dp"
+    android:textSize="18sp"
+    android:textAlignment="center"
+    android:textColor="#FFF"
+    android:textStyle="bold"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="won"
+    android:id="@+id/winname"
+    android:textSize="22sp"
+    android:layout_margin="20dp"
+    android:textAlignment="center"
+    android:textColor="#FFF"
+    android:textStyle="bold"
+    />
+
+<ImageView
+    android:layout_width="150dp"
+    android:layout_height="130dp"
+    android:layout_margin="20dp"
+    android:src="@drawable/win_cup"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xo_button"
+    android:text="ok"
+    android:id="@+id/winbutton"
+    android:textColor="#FFF"
+    android:layout_marginBottom="20dp"
+    />
+
+
+</LinearLayout>

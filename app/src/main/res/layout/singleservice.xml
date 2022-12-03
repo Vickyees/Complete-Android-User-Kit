@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/profileCard"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/whitebg"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/whitebg"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/rdp"
+            android:layout_gravity="center"
+            android:background="@color/uzw"
+            app:civ_border_color="@color/uzg"
+            app:civ_border_width="2dp"
+            android:src="@drawable/dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/uzsb"
+                android:textStyle="bold"
+                android:id="@+id/rname"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:text="Name"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/uzgg"
+                android:id="@+id/rservice"
+                android:text="service"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/uzgg"
+                android:id="@+id/rlocation"
+                android:textSize="13sp"
+                android:textAllCaps="true"
+                android:text="location"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rPhone"
+            android:text="Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rExprience"
+            android:text="Exprience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rAge"
+            android:text="Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/rGender"
+            android:text="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rAddress"
+            android:text="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rDescription"
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rUid"
+            android:text="uid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

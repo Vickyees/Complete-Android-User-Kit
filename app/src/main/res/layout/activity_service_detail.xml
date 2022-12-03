@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/uzg"
+    android:padding="5dp"
+    tools:context=".ServiceDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+                android:background="@drawable/whitebg"
+                android:layout_marginRight="10dp"
+                android:padding="6dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/dDp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dName"
+                        android:text="Name"
+                        android:textColor="@color/uzsb"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/dService"
+                        android:text="Service"
+                        android:textStyle="bold"
+                         android:textColor="@color/uzggg"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/dLocation"
+                        android:text="Location"
+                         android:textColor="@color/uzggg"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebg"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:onClick="addsmile"
+                    android:id="@+id/like"
+                    android:src="@drawable/smile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cSmile"
+                    android:text="Smiles"
+                    android:textColor="@color/uzggg"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/SeradView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-7762392222724955/2952430115"/>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:layout_margin="5dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/whitebg"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="Phone"
+                         android:textColor="@color/uzggg"
+                        android:textSize="20sp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:id="@+id/dPhone"
+                        android:text="Phone"
+                        android:textColor="@color/uzggg"
+                        android:textSize="18sp"
+                        android:autoLink="phone"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="Experience"
+                         android:textColor="@color/uzggg"
+                        android:textSize="20sp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/dExprience"
+                    android:text="Exprience"
+                     android:textColor="@color/uzggg"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="Age"
+                         android:textColor="@color/uzggg"
+                        android:textSize="20sp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                    android:id="@+id/dAge"
+                    android:text="Age"
+                     android:textColor="@color/uzggg"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="Gender"
+                         android:textColor="@color/uzggg"
+                        android:textSize="20sp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                    android:id="@+id/dGender"
+                    android:text="Gender"
+                     android:textColor="@color/uzggg"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:text="Address"
+                         android:textColor="@color/uzggg"
+                        android:textSize="20sp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                    android:id="@+id/dAddress"
+                    android:text="Address"
+                     android:textColor="@color/uzggg"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Description"
+                     android:textColor="@color/uzggg"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/dDescription"
+                    android:text="Description"
+                     android:textColor="@color/uzggg"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/dUid"
+                    android:text="uid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:background="@drawable/whitebg"
+                    android:layout_margin="5dp"
+                    android:id="@+id/UDbtn"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="update"
+                         android:textColor="@color/uzw"
+                        android:textSize="18sp"
+                        android:background="@drawable/bluebg"
+                        android:id="@+id/updatebtn"
+                        android:onClick="updateservice"
+                        />
+
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                         android:textColor="@color/uzggg"
+                        android:textSize="18sp"
+                        android:background="@drawable/uzedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="delete"
+                        android:id="@+id/delbtn"
+                        android:onClick="delete"
+                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/addfeedbacklayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                android:padding="20dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:background="@drawable/whitebg">
+
+                <TextView
+                    android:text="Feedback"
+                    android:textColor="@color/uzggg"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/txt_feedback"
+                    android:layout_width="match_parent"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Feedback"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/uzbutton"
+                    android:layout_marginTop="10dp"
+                    android:text="Add feedback"
+                    android:onClick="addFeedback"
+                    android:textColor="@color/uzw"
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="20dp"
+                android:background="@drawable/whitebg">
+
+                <TextView
+                    android:id="@+id/fb"
+                    android:text="Feedback"
+                    android:textColor="@color/uzggg"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="180dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="showfeedback"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fbrecyclerview"
+                    android:scrollbars="vertical"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebg"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/cb_start_muted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:backgroundTint="@color/uzggg"
+                    android:textColor="@color/uzggg"
+                    android:text="Start video ads muted" />
+
+                <Button
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/uzbutton"
+                    android:visibility="gone"
+                    android:textColor="@color/uzw"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Refresh Ad" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Video status: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_video_status"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

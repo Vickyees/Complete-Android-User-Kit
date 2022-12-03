@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Icard">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="150dp"
+                android:padding="20dp"
+                android:src="@drawable/addpic"
+                android:id="@+id/imageid"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioGroup
+                android:id="@+id/rgSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="visible"
+
+                android:layout_margin="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SIDE  : "
+                    android:textSize="20dp"
+                    android:textColor="@color/white"/>
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="FRONT"
+                    android:backgroundTint="@color/white"
+                    android:buttonTint="@color/white"
+                    android:checked="true"
+                    android:textColor="@color/white"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="BACK"
+                    android:backgroundTint="@color/white"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <Button
+                android:background="@drawable/bg_button_white"
+                android:textColor="@color/white"
+                android:id="@+id/select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="select"/>
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="upload"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

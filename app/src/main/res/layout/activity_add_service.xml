@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/uzg"
+    android:padding="5dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".AddService">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/uzg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/whitebg"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/whitebg"
+                    android:orientation="vertical">
+
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/aProdp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/uzw"
+                        android:src="@drawable/dp"
+                        app:civ_border_color="@color/uzg"
+                        app:civ_border_width="3dp" />
+
+                    <Button
+                        android:id="@+id/aselect"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/uzbutton"
+                        android:gravity="center"
+                        android:onClick="select"
+                        android:text="select"
+                        android:textColor="@color/uzw"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/whitebg"
+                    android:orientation="vertical"
+                    android:padding="12sp">
+
+                    <EditText
+                        android:id="@+id/dName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/uzedittext"
+                        android:hint="Name"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="#000000" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/uzedittext"
+                        android:hint="Service / Profession"
+                        android:inputType="textNoSuggestions|textMultiLine"
+                        android:scrollbars="vertical"
+                        android:textColor="#000000" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/uzedittext"
+                        android:hint="City"
+                        android:inputType="textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="10dp"
+                android:id="@+id/AddadView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-7762392222724955/5223370237"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/whitebg"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/dPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/dExprience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Exprience"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/dAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="#000000" />
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Gender"
+                        android:textColor="@color/uzgg"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_pirates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/uzgg"
+                        android:buttonTint="@color/uzbg"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Male"
+                        android:textColor="@color/uzgg"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_ninjas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/uzgg"
+                        android:buttonTint="@color/uzbg"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Female"
+                        android:textColor="@color/uzgg"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/dAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Full Address (Area)"
+                    android:scrollbars="vertical"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/dDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/uzedittext"
+                    android:hint="Description"
+                    android:scrollbars="vertical"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:textColor="#000000" />
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/uzbutton"
+                    android:onClick="addprofile"
+                    android:text="add profile"
+                    android:textColor="@color/uzw"
+                    android:textSize="18sp" />
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

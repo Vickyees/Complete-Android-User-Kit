@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/black"
+    tools:context=".Add_Profile">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Full Name :"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/person"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Contact No :"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/phone"
+        android:textSize="20sp"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Current  Address :"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/location"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Permenent Address :"
+        android:inputType="text"
+        android:drawableEnd="@drawable/location"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Email :"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/mail"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Gender :"
+        android:drawableEnd="@drawable/gender"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Date Of Birth :"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/cake"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Blood Group :"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/hospital"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Guardian's/Friend's Name:"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:drawableEnd="@drawable/person"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/e10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Guardian's/Friends Contact No :"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_white"
+        android:textColorHint="@color/white"
+        android:drawableEnd="@drawable/phone"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+
+
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="3dp"
+                android:paddingTop="5dp"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-2605022458231805/6680984884">
+            </com.google.android.gms.ads.AdView>
+            
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD / UPDATE "
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button_white"
+                android:padding="20dp"
+                android:onClick="btn_upload_profile"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

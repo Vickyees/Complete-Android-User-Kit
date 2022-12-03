@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/uzg"
+    tools:context=".AddAdverticement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="@drawable/whitebg">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="3dp"
+                android:id="@+id/ADDimage"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectADDimage"
+                android:text="SELECT"
+                android:onClick="selectIamge"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/uzbutton"
+                android:textColor="@color/uzw"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/uzggg"
+                android:id="@+id/ettitle"
+                android:hint="Title"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/uzedittext"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/uzggg"
+                android:id="@+id/etLocation"
+                android:hint="Location"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/uzedittext"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/uzggg"
+                android:id="@+id/etService"
+                android:hint="Service"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/uzedittext"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/uzggg"
+                android:id="@+id/etDes"
+                android:hint="Description"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/uzedittext"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/uzggg"
+                android:id="@+id/etContact"
+                android:hint="Contact"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/uzedittext"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Uploadadd"
+                android:text="Upload Add"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/uzbutton"
+                android:onClick="UploadAdd"
+                android:textColor="@color/uzw"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

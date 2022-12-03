@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/uzg"
+    tools:context=".WhatsNew">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/mainprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="-3dp"
+        android:progress="0"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:max="100"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/NadView"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainprogressbar"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7762392222724955/1643217878"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/note"
+        android:layout_below="@+id/NadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/whitebg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note :-"
+            android:textSize="18sp"
+            android:textColor="@color/uzbg"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you wants to advertise yours contact\n 11813star@gmail.com\ncharge based on your request"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/uzggg"
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/serbylayout"
+        android:padding="5dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/whitebg"
+        android:layout_below="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/serbyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Search by City/ Town "
+            android:inputType="textNoSuggestions"
+            android:background="@drawable/uzedittext"
+            android:layout_margin="6dp"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/adRecycler"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/serbylayout"
+        android:scrollbars="vertical"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:id="@+id/addAD"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/bluebg"
+        android:backgroundTint="@color/uzsb"
+        android:onClick="addAddebtn"
+        android:src="@drawable/ic_file_upload_24dp"
+        />
+
+
+</RelativeLayout>

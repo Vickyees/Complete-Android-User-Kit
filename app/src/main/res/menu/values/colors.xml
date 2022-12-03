@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="uzcolorPrimary">#FFF</color>
+    <color name="uzcolorPrimaryDark">#FFF</color>
+    <color name="uzcolorAccent">#AAAAAA</color>
+    <color name="uzbg">#0C0C0C</color>
+    <color name="uzw">#FFFFFF</color>
+    <color name="uzg">#F8F8F8</color>
+    <color name="uzgg">#AAAAAA</color>
+    <color name="uzggg">#636363</color>
+    <color name="uzsb">#4AB6E4</color>
+</resources>

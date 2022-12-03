@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WallMainActivity">
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="-2dp"
+        android:progress="20"
+        android:visibility="gone"
+        />
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mywebview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/reletivelayout">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nointernet"
+            android:src="@drawable/nointernet"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection"
+            android:layout_below="@+id/nointernet"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:id="@+id/textnoconnection"
+            />
+
+        <Button
+            android:id="@+id/btnnoconnection"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="Retry"
+            android:background="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_below="@+id/textnoconnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

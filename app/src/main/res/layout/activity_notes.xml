@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/notestitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your title here ..."
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg"
+            android:alpha=".3"/>
+
+        <EditText
+            android:id="@+id/notesDes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type your description here ..."
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/addnotesbutton"
+            android:layout_width="match_parent"
+            android:background="@drawable/button"
+            android:layout_height="wrap_content"
+            android:text="create notes"
+            android:textColor="@color/w"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

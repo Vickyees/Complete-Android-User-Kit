@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#14141A</color>
+    <color name="colorPrimaryDark">#14141A</color>
+    <color name="colorAccent">#181717</color>
+    <color name="bg">#14141A</color>
+    <color name="w">#FFF</color>
+    <color name="g">#8B8B93</color>
+    <color name="sb">#4AB6E4</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="litwhite">#F1F1F1</color>
+
+    <color name="black_semi_transprent">#B3000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#734CB8</color>
+    <color name="pink_pressed">#673AB7</color>
+    <color name="blue_semi_transprent">#805677fc    </color>
+    <color name="blue_semi_transprent_pressed">#80738ffe</color>
+
+    <color name="gold">#ffa500</color>
+    <color name="lb">#4952C7</color>
+    <color name="mb">#2541A5</color>
+    <color name="orange">#D6895E</color>
+
+    <color name="yellow">#FFC72B</color>
+    <color name="darkGrey">#1F1F1F</color>
+
+    <color name="uzcolorPrimary">#FFF</color>
+    <color name="uzcolorPrimaryDark">#FFF</color>
+    <color name="uzcolorAccent">#AAAAAA</color>
+    <color name="uzbg">#0C0C0C</color>
+    <color name="uzw">#FFFFFF</color>
+    <color name="uzg">#F8F8F8</color>
+    <color name="uzgg">#AAAAAA</color>
+    <color name="uzggg">#636363</color>
+    <color name="uzsb">#4AB6E4</color>
+
+    <color name="dovecolorPrimary">#673AB7</color>
+    <color name="dovecolorPrimaryLight">#4DA5EB</color>
+    <color name="dovecolorPrimaryDark">#013966</color>
+    <color name="dovecolorAccent">#FFFFFF</color>
+    <color name="green">#65CC6B</color>
+</resources>

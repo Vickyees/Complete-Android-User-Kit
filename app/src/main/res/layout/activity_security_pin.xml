@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg"
+    tools:context=".SecurityPin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Security Pin"
+        android:textColor="@color/w"
+        android:gravity="center"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:id="@+id/pin"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:layout_margin="20dp"
+        android:textColor="@color/w"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:maxLength="4"
+        />
+    <Button
+        android:id="@+id/btnSok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_margin="20sp"
+        android:text="ok"
+        android:onClick="ok"
+        android:visibility="gone"
+        android:textColor="@color/w"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/btnSCreate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_margin="20sp"
+        android:text="Create"
+        android:onClick="Create"
+        android:visibility="gone"
+        android:textColor="@color/w"
+        android:textSize="22sp"
+        />
+</LinearLayout>

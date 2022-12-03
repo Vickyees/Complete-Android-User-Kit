@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/uzg"
+    tools:context=".updateServive">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/uzg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/whitebg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/uProdp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="8dp"
+                        app:civ_border_color="@color/uzg"
+                        app:civ_border_width="3dp"
+                        android:src="@drawable/dp"/>
+
+                    <Button
+                        android:layout_marginTop="4dp"
+                        android:onClick="updateselectImage"
+                        android:id="@+id/uselect"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="select"
+                        android:textColor="@color/uzw"
+                        android:textSize="18sp"
+                        android:background="@drawable/uzbutton"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:background="@drawable/uzedittext"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="#000000"
+                        android:id="@+id/uName"
+                        android:inputType="textNoSuggestions|textMultiLine"
+                        android:hint="Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <AutoCompleteTextView
+                        android:background="@drawable/uzedittext"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="#000000"
+                        android:id="@+id/uService"
+                        android:inputType="textNoSuggestions|textMultiLine"
+                        android:hint="Service / profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <AutoCompleteTextView
+                        android:background="@drawable/uzedittext"
+                        android:layout_marginBottom="4dp"
+                        android:textColor="#000000"
+                        android:id="@+id/uLocation"
+                        android:inputType="textNoSuggestions"
+                        android:hint="Vaniyambadi / Ambur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="10dp"
+                android:id="@+id/upadView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-7762392222724955/8336904145"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:background="@drawable/whitebg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:background="@drawable/uzedittext"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:id="@+id/uPhone"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:background="@drawable/uzedittext"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:id="@+id/uExprience"
+                    android:hint="Exprience"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:background="@drawable/uzedittext"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:id="@+id/uAge"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="20sp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/uzgg"
+                        />
+
+                    <RadioButton android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="18sp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/uzgg"
+                        android:backgroundTint="@color/uzgg"
+                    android:buttonTint="@color/uzbg"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="18sp"
+                        android:textColor="@color/uzgg"
+                        android:backgroundTint="@color/uzgg"
+                        android:buttonTint="@color/uzbg"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+
+                <EditText
+                    android:background="@drawable/uzedittext"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:id="@+id/uAddress"
+                    android:hint="Address"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:background="@drawable/uzedittext"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:id="@+id/uDescription"
+                    android:hint="Description"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update  profile"
+                    android:onClick="updatebtn"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/uzw"
+                    android:textSize="18sp"
+                    android:background="@drawable/uzbutton"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adCard"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/whitebg"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/whitebg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/adImage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/uzsb"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/adTitle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/uzggg"
+            android:text="Location"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/adLocation"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/uzggg"
+            android:text="Service"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:id="@+id/adService"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/uzgg"
+            android:text="Description"
+            android:maxLines="2"
+            android:id="@+id/adDec"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/uzgg"
+            android:text="contact"
+            android:id="@+id/adcontact"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

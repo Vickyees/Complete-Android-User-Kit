@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ETAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarLayout" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.popupLayout" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="custom_fab">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="UZTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/uzcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/uzcolorPrimaryDark</item>
+        <item name="colorAccent">@color/uzcolorAccent</item>
+        <item name="titleTextColor">@color/uzbg</item>
+        <item name="actionMenuTextColor">@color/uzbg</item>
+        <item name="android:icon">@color/uzbg</item>
+        <item name="subtitleTextColor">@color/uzbg</item>
+        <item name="android:statusBarColor">@color/uzw</item>
+    </style>
+
+
+    <style name="UZTheme.AdAttribution">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">left</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:text">@string/ad_attribution</item>
+    <item name="android:background">#FFCC66</item>
+    <item name="android:width">15dp</item>
+    <item name="android:height">15dp</item>
+    </style>
+    <style name="DoveAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dovecolorPrimary</item>
+        <item name="colorPrimaryDark">@color/dovecolorPrimaryDark</item>
+        <item name="colorAccent">@color/dovecolorAccent</item>
+    </style>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog"></style>
+</resources>
+

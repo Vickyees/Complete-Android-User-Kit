@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".QrMainActivity">
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg"
+        android:text="Scan"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:layout_margin="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR and Bar Code"
+        android:textSize="16dp"
+        android:src="@drawable/qricon"
+        android:id="@+id/btn_scan"/>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bg"
+        android:text="Result"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_margin="20dp"
+        android:id="@+id/result_text"/>
+
+    <Button
+        android:onClick="copyToClipBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Copy to Clipboard"
+        android:textColor="@color/w"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>
